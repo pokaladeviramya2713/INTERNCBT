@@ -1,0 +1,110 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oldenburg", serif;
+    background: url('backdog.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    max-width: 1350px;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Appointment Form Container */
+.appointment-container {
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #FFD700;
+}
+/* Move the menu-icon outside the header */
+.menu-icon {
+    position: absolute; /* Allows free placement on the page */
+    top: 10px; /* Adjust the vertical placement */
+    left: 20px; /* Adjust the horizontal placement */
+    font-size: 2em;
+    color: #FFD700;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.2); /* Add a hover effect */
+}
+
+/* Form Styling */
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment-form label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.appointment-form input, 
+.appointment-form select {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.appointment-form input:focus, 
+.appointment-form select:focus {
+    outline: none;
+    border: 2px solid #FFD700;
+    background-color: #fff;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ffbf00;
+    transform: scale(1.05);
+}
+
+.submit-btn:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
