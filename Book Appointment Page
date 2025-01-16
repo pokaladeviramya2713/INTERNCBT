@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Pawfect Grooming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <h1 class="oldenburg-regular">Book Your Appointment</h1>
+    </header>
+
+    <div class="appointment-container">
+        <form action="#" method="POST" class="appointment-form" onsubmit="return showConfirmation()">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <label for="pet-name">Your Pet's Name</label>
+            <input type="text" id="pet-name" name="pet-name" placeholder="Enter your pet's name" required>
+            
+            <label for="service">Select a Service</label>
+            <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option value="grooming">Grooming</option>
+                <option value="spa">Spa</option>
+                <option value="nail-trim">Nail Trim</option>
+                <option value="bath">Bath</option>
+            </select>
+            
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required>
+            
+            <button type="submit" class="submit-btn">Confirm Appointment</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            alert("Menu toggled! Implement navigation logic here.");
+        }
+
+        function showConfirmation() {
+            alert("Your appointment has been submitted successfully!");
+            window.location.href = "home.html"; // Replace with the actual home page URL
+            return false; // Prevent form submission so the page doesn't reload
+        }
+    </script>
+</body>
+</html>
