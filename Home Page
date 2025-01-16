@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Pawfect Grooming - Your Pet’s Spa Day Online</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="home.css">
+    </head>
+
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <h1 class="oldenburg-regular">Welcome to <span>Pawfect Grooming</span> - Your Pet’s Spa Day Online</h1>
+    </header>
+
+    <div id="dashboard">
+        <ul>
+            <li></li>
+            <li></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="book.html">Book Appointment</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Pet Care Blog</a></li>
+        </ul>
+    </div>
+    <div class="overlay" onclick="toggleMenu()"></div>
+
+    <div class="content-container">
+        <div class="box">
+            <img src="bdog.png" alt="Pet Grooming" class="box-image">
+            <p class="oldenburg-regular">Give your pet the luxury spa day they deserve! Our professional groomers are here to make your pet look and feel their best.</p>
+            <a href="book.html">
+                <button class="book-now-btn">BOOK NOW</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="popup popup-left">
+        <img src="dog1.jpeg" alt="Dog" class="popup-image">
+    </div>
+    <div class="popup popup-right">
+        <img src="dog2.jpeg" alt="Dog" class="popup-image">
+    </div>
+    <div class="popup popup-left-lower">
+        <img src="cat1.jpg" alt="Dog" class="popup-image">
+    </div>
+    <div class="popup popup-right-lower">
+        <img src="cat2.jpg" alt="Dog" class="popup-image">
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const dashboard = document.getElementById('dashboard');
+            const overlay = document.querySelector('.overlay');
+            dashboard.classList.toggle('open');
+            overlay.classList.toggle('visible');
+        }
+    </script>
+</body>
+</html>
